@@ -1,0 +1,2158 @@
+{
+	"info": {
+		"_postman_id": "aa703630-02ba-4b4f-ab0b-ae92783fba77",
+		"name": "HotelCrystal",
+		"description": "Hotel Crystal API documentation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CLIENTE",
+			"item": [
+				{
+					"name": "All cliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/cliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"T4",
+								"BackEnd",
+								"HotelSlim",
+								"public",
+								"index.php",
+								"v1",
+								"cliente"
+							]
+						},
+						"description": "Descrição:\n\nAcessar todos os clientes cadastrados."
+					},
+					"response": [
+						{
+							"name": "GET All Cliente",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/cliente",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"T4",
+										"BackEnd",
+										"HotelSlim",
+										"public",
+										"index.php",
+										"v1",
+										"cliente"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 08 Nov 2018 18:24:12 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.35 (Win32) OpenSSL/1.1.0i PHP/7.2.11"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.11"
+								},
+								{
+									"key": "Content-Length",
+									"value": "599"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cliente\": [\n        {\n            \"idCliente\": \"1\",\n            \"nome\": \"Fernanda\",\n            \"telefone\": \"4444-4444\",\n            \"cpf\": \"123.123.123-09\",\n            \"endereco\": \"Rua Oriente\",\n            \"email\": \"fetpiva@gmail.com\",\n            \"senha\": \"fetpiva\"\n        },\n        {\n            \"idCliente\": \"2\",\n            \"nome\": \"Adriana\",\n            \"telefone\": \"7777-7777\",\n            \"cpf\": \"555.555.555-30\",\n            \"endereco\": \"Rua Sergipe\",\n            \"email\": \"drip@gmail.com\",\n            \"senha\": \"drip\"\n        },\n        {\n            \"idCliente\": \"3\",\n            \"nome\": \"Augusto\",\n            \"telefone\": \"3333-3333\",\n            \"cpf\": \"888.888.888-21\",\n            \"endereco\": \"Rua Santos\",\n            \"email\": \"aug@gmail.com\",\n            \"senha\": \"aug\"\n        },\n        {\n            \"idCliente\": \"4\",\n            \"nome\": \"Murilo\",\n            \"telefone\": \"9999-9999\",\n            \"cpf\": \"444.444.444.45\",\n            \"endereco\": \"Rua Boraceia\",\n            \"email\": \"mu@gmail.com\",\n            \"senha\": \"mu\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "One cliente By Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/cliente/{idCliente}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"T4",
+								"BackEnd",
+								"HotelSlim",
+								"public",
+								"index.php",
+								"v1",
+								"cliente",
+								"{idCliente}"
+							]
+						},
+						"description": "Descrição:\n\nAcessar um cliente específico através do id."
+					},
+					"response": [
+						{
+							"name": "GET One cliente By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/cliente/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"T4",
+										"BackEnd",
+										"HotelSlim",
+										"public",
+										"index.php",
+										"v1",
+										"cliente",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 09 Nov 2018 00:56:34 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.35 (Win32) OpenSSL/1.1.0i PHP/7.2.11"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.11"
+								},
+								{
+									"key": "Content-Length",
+									"value": "154"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"idCliente\": \"1\",\n    \"nome\": \"Fernanda\",\n    \"telefone\": \"4444-4444\",\n    \"cpf\": \"123.123.123-09\",\n    \"endereco\": \"Rua Oriente\",\n    \"email\": \"fetpiva@gmail.com\",\n    \"senha\": \"fetpiva\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Cadastro cliente",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Carlos\",\n    \"telefone\": \"4444-4444\",\n    \"cpf\": \"123.123.123-09\",\n    \"endereco\": \"Rua Oriente\",\n    \"email\": \"carlos@gmail.com\",\n    \"senha\": \"carlos\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/cliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"T4",
+								"BackEnd",
+								"HotelSlim",
+								"public",
+								"index.php",
+								"v1",
+								"cliente"
+							]
+						},
+						"description": "Descrição:\n\nCadastrar um cliente."
+					},
+					"response": [
+						{
+							"name": "Cadastro cliente",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nome\": \"Carlos\",\n    \"telefone\": \"4444-4444\",\n    \"cpf\": \"123.123.123-09\",\n    \"endereco\": \"Rua Oriente\",\n    \"email\": \"carlos@gmail.com\",\n    \"senha\": \"carlos\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/cliente",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"T4",
+										"BackEnd",
+										"HotelSlim",
+										"public",
+										"index.php",
+										"v1",
+										"cliente"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 09 Nov 2018 00:52:23 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.35 (Win32) OpenSSL/1.1.0i PHP/7.2.11"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.11"
+								},
+								{
+									"key": "Content-Length",
+									"value": "257"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "array(6) {\n  [\"nome\"]=>\n  string(6) \"Carlos\"\n  [\"telefone\"]=>\n  string(9) \"4444-4444\"\n  [\"cpf\"]=>\n  string(14) \"123.123.123-09\"\n  [\"endereco\"]=>\n  string(11) \"Rua Oriente\"\n  [\"email\"]=>\n  string(16) \"carlos@gmail.com\"\n  [\"senha\"]=>\n  string(6) \"carlos\"\n}\n\r\n"
+						}
+					]
+				},
+				{
+					"name": "cliente By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/cliente/{idCliente}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"T4",
+								"BackEnd",
+								"HotelSlim",
+								"public",
+								"index.php",
+								"v1",
+								"cliente",
+								"{idCliente}"
+							]
+						},
+						"description": "Descrição:\n\nDeletar um cliente cadastrado através do id."
+					},
+					"response": [
+						{
+							"name": "Deletar cliente",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/cliente/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"T4",
+										"BackEnd",
+										"HotelSlim",
+										"public",
+										"index.php",
+										"v1",
+										"cliente",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 09 Nov 2018 01:01:02 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.35 (Win32) OpenSSL/1.1.0i PHP/7.2.11"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.11"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "Deletado com sucesso\r\n"
+						}
+					]
+				},
+				{
+					"name": "Alterar dados cliente",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Jessica\",\n    \"telefone\": \"3333-4444\",\n    \"cpf\": \"111.111.111-09\",\n    \"endereco\": \"Rua Oriente\",\n    \"email\": \"jes@gmail.com\",\n    \"senha\": \"jessica\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/cliente/{idCliente}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"T4",
+								"BackEnd",
+								"HotelSlim",
+								"public",
+								"index.php",
+								"v1",
+								"cliente",
+								"{idCliente}"
+							]
+						},
+						"description": "Descrição:\n\nAtualizar informações do cliente."
+					},
+					"response": [
+						{
+							"name": "Alterar cliente",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nome\": \"Jessica\",\n    \"telefone\": \"3333-4444\",\n    \"cpf\": \"111.111.111-09\",\n    \"endereco\": \"Rua Oriente\",\n    \"email\": \"jes@gmail.com\",\n    \"senha\": \"jessica\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/cliente/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"T4",
+										"BackEnd",
+										"HotelSlim",
+										"public",
+										"index.php",
+										"v1",
+										"cliente",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 09 Nov 2018 01:06:45 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.35 (Win32) OpenSSL/1.1.0i PHP/7.2.11"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.11"
+								},
+								{
+									"key": "Content-Length",
+									"value": "24"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "Atualizado com sucesso\r\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "FUNCIONARIO",
+			"item": [
+				{
+					"name": "All funcionario",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/funcionario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"T4",
+								"BackEnd",
+								"HotelSlim",
+								"public",
+								"index.php",
+								"v1",
+								"funcionario"
+							]
+						},
+						"description": "Descrição:\n\nAcessar todos os funcionários cadastrados."
+					},
+					"response": [
+						{
+							"name": "GET All funcionario",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nome\": \"Jessica\",\n    \"telefone\": \"3333-4444\",\n    \"cpf\": \"111.111.111-09\",\n    \"endereco\": \"Rua Oriente\",\n    \"email\": \"jes@gmail.com\",\n    \"senha\": \"jessica\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/funcionario",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"T4",
+										"BackEnd",
+										"HotelSlim",
+										"public",
+										"index.php",
+										"v1",
+										"funcionario"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 09 Nov 2018 01:29:47 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.35 (Win32) OpenSSL/1.1.0i PHP/7.2.11"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.11"
+								},
+								{
+									"key": "Content-Length",
+									"value": "203"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"funcionario\": [\n        {\n            \"id\": \"1\",\n            \"login\": \"Adriana\",\n            \"senha\": \"Adriana\"\n        },\n        {\n            \"id\": \"2\",\n            \"login\": \"Fernanda\",\n            \"senha\": \"Fernanda\"\n        },\n        {\n            \"id\": \"3\",\n            \"login\": \"Sergio\",\n            \"senha\": \"Sergio\"\n        },\n        {\n            \"id\": \"4\",\n            \"login\": \"Mauro\",\n            \"senha\": \"Mauro\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "One funcionario By Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/funcionario/{idFuncionario}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"T4",
+								"BackEnd",
+								"HotelSlim",
+								"public",
+								"index.php",
+								"v1",
+								"funcionario",
+								"{idFuncionario}"
+							]
+						},
+						"description": "Descrição: \n\nAcessar um funcionário específico através do id."
+					},
+					"response": [
+						{
+							"name": "GET One funcionario By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/funcionario/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"T4",
+										"BackEnd",
+										"HotelSlim",
+										"public",
+										"index.php",
+										"v1",
+										"funcionario",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 09 Nov 2018 01:35:09 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.35 (Win32) OpenSSL/1.1.0i PHP/7.2.11"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.11"
+								},
+								{
+									"key": "Content-Length",
+									"value": "48"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"1\",\n    \"login\": \"Adriana\",\n    \"senha\": \"Adriana\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Cadastro funcionario",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"login\": \"Mariana\",\n    \"senha\": \"Mariana\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/funcionario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"T4",
+								"BackEnd",
+								"HotelSlim",
+								"public",
+								"index.php",
+								"v1",
+								"funcionario"
+							]
+						},
+						"description": "Descrição:\r\n\r\nCadastrar um funcionário."
+					},
+					"response": [
+						{
+							"name": "Cadastrar funcionario",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"login\": \"Mariana\",\n    \"senha\": \"Mariana\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/funcionario",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"T4",
+										"BackEnd",
+										"HotelSlim",
+										"public",
+										"index.php",
+										"v1",
+										"funcionario"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 09 Nov 2018 01:37:30 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.35 (Win32) OpenSSL/1.1.0i PHP/7.2.11"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.11"
+								},
+								{
+									"key": "Content-Length",
+									"value": "87"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "array(2) {\n  [\"login\"]=>\n  string(7) \"Mariana\"\n  [\"senha\"]=>\n  string(7) \"Mariana\"\n}\n\r\n"
+						}
+					]
+				},
+				{
+					"name": "funcionario By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/funcionario/{idFuncionario}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"T4",
+								"BackEnd",
+								"HotelSlim",
+								"public",
+								"index.php",
+								"v1",
+								"funcionario",
+								"{idFuncionario}"
+							]
+						},
+						"description": "Descrição:\r\n\r\nDeletar um funcionário cadastrado através do id."
+					},
+					"response": [
+						{
+							"name": "Deletar funcionario",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/funcionario/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"T4",
+										"BackEnd",
+										"HotelSlim",
+										"public",
+										"index.php",
+										"v1",
+										"funcionario",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 09 Nov 2018 01:40:17 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.35 (Win32) OpenSSL/1.1.0i PHP/7.2.11"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.11"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "Deletado com sucesso\r\n"
+						}
+					]
+				},
+				{
+					"name": "Alterar dados funcionario",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"login\": \"Mauro\",\n    \"senha\": \"123\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/funcionario/{idFuncionario}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"T4",
+								"BackEnd",
+								"HotelSlim",
+								"public",
+								"index.php",
+								"v1",
+								"funcionario",
+								"{idFuncionario}"
+							]
+						},
+						"description": "Descrição:\r\n\r\nAtualizar informações de um funcionário."
+					},
+					"response": [
+						{
+							"name": "Alterar dados funcionario",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"login\": \"Mauro\",\n    \"senha\": \"123\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/funcionario/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"T4",
+										"BackEnd",
+										"HotelSlim",
+										"public",
+										"index.php",
+										"v1",
+										"funcionario",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 09 Nov 2018 01:48:54 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.35 (Win32) OpenSSL/1.1.0i PHP/7.2.11"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.11"
+								},
+								{
+									"key": "Content-Length",
+									"value": "24"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "Atualizado com sucesso\r\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "QUARTO",
+			"item": [
+				{
+					"name": "All quarto",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/quarto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"T4",
+								"BackEnd",
+								"HotelSlim",
+								"public",
+								"index.php",
+								"v1",
+								"quarto"
+							]
+						},
+						"description": "Descrição:\r\n\r\nAcessar as informações de todos os quartos."
+					},
+					"response": [
+						{
+							"name": "GET all quarto",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/quarto/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"T4",
+										"BackEnd",
+										"HotelSlim",
+										"public",
+										"index.php",
+										"v1",
+										"quarto",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 09 Nov 2018 02:15:01 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.35 (Win32) OpenSSL/1.1.0i PHP/7.2.11"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.11"
+								},
+								{
+									"key": "Content-Length",
+									"value": "430"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"quarto\": [\n        {\n            \"idQuarto\": \"1\",\n            \"capacidade\": \"2\",\n            \"descricao\": \"classico\",\n            \"precoDia\": \"50\",\n            \"nomeQuarto\": \"Classic Room\"\n        },\n        {\n            \"idQuarto\": \"2\",\n            \"capacidade\": \"3\",\n            \"descricao\": \"chique\",\n            \"precoDia\": \"100\",\n            \"nomeQuarto\": \"Ultra Superior Room\"\n        },\n        {\n            \"idQuarto\": \"3\",\n            \"capacidade\": \"1\",\n            \"descricao\": \"luxuoso\",\n            \"precoDia\": \"250\",\n            \"nomeQuarto\": \"Grand Deluxe Room\"\n        },\n        {\n            \"idQuarto\": \"4\",\n            \"capacidade\": \"3\",\n            \"descricao\": \"grande\",\n            \"precoDia\": \"170\",\n            \"nomeQuarto\": \"Supeeer Quarto\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "One quarto By Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/quarto/{idQuarto}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"T4",
+								"BackEnd",
+								"HotelSlim",
+								"public",
+								"index.php",
+								"v1",
+								"quarto",
+								"{idQuarto}"
+							]
+						},
+						"description": "Descrição:\r\n\r\nAcessar informações de um quarto específico através do id."
+					},
+					"response": [
+						{
+							"name": "http://localhost/hotelSlim/backEnd/public/index.php/v1/quarto/2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/quarto/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"T4",
+										"BackEnd",
+										"HotelSlim",
+										"public",
+										"index.php",
+										"v1",
+										"quarto",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 09 Nov 2018 02:18:09 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.35 (Win32) OpenSSL/1.1.0i PHP/7.2.11"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.11"
+								},
+								{
+									"key": "Content-Length",
+									"value": "108"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"idQuarto\": \"2\",\n    \"capacidade\": \"3\",\n    \"descricao\": \"chique\",\n    \"precoDia\": \"100\",\n    \"nomeQuarto\": \"Ultra Superior Room\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Cadastro quarto",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"capacidade\": \"2\",\n    \"descricao\": \"simples\",\n    \"precoDia\": \"30\",\n    \"nomeQuarto\": \"Basic Room\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/quarto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"T4",
+								"BackEnd",
+								"HotelSlim",
+								"public",
+								"index.php",
+								"v1",
+								"quarto"
+							]
+						},
+						"description": "Descrição:\n\nCadastrar um novo quarto."
+					},
+					"response": [
+						{
+							"name": "Cadastrar quarto",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"capacidade\": \"2\",\n    \"descricao\": \"simples\",\n    \"precoDia\": \"30\",\n    \"nomeQuarto\": \"Basic Room\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/quarto",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"T4",
+										"BackEnd",
+										"HotelSlim",
+										"public",
+										"index.php",
+										"v1",
+										"quarto"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 09 Nov 2018 02:21:20 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.35 (Win32) OpenSSL/1.1.0i PHP/7.2.11"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.11"
+								},
+								{
+									"key": "Content-Length",
+									"value": "169"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "array(4) {\n  [\"capacidade\"]=>\n  string(1) \"2\"\n  [\"descricao\"]=>\n  string(7) \"simples\"\n  [\"precoDia\"]=>\n  string(2) \"30\"\n  [\"nomeQuarto\"]=>\n  string(10) \"Basic Room\"\n}\n\r\n"
+						}
+					]
+				},
+				{
+					"name": "quarto By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/quarto/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"T4",
+								"BackEnd",
+								"HotelSlim",
+								"public",
+								"index.php",
+								"v1",
+								"quarto",
+								"5"
+							]
+						},
+						"description": "Descrição:\n\nDeletar um quarto."
+					},
+					"response": [
+						{
+							"name": "Deletar quarto",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost/hotelSlim/backEnd/public/index.php/v1/quarto/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hotelSlim",
+										"backEnd",
+										"public",
+										"index.php",
+										"v1",
+										"quarto",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 09 Nov 2018 02:25:10 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.35 (Win32) OpenSSL/1.1.0i PHP/7.2.11"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.11"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "Deletado com sucesso\r\n"
+						}
+					]
+				},
+				{
+					"name": "Alterar dados quarto",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"idQuarto\": \"4\",\n    \"capacidade\": \"3\",\n    \"descricao\": \"simples\",\n    \"precoDia\": \"40\",\n    \"nomeQuarto\": \"Basic Room\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/quarto/{idQuarto}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"T4",
+								"BackEnd",
+								"HotelSlim",
+								"public",
+								"index.php",
+								"v1",
+								"quarto",
+								"{idQuarto}"
+							]
+						},
+						"description": "Descrição:\n\nAtualizar informações de um quarto."
+					},
+					"response": [
+						{
+							"name": "Alterar dados quarto",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"idQuarto\": \"4\",\n    \"capacidade\": \"3\",\n    \"descricao\": \"simples\",\n    \"precoDia\": \"40\",\n    \"nomeQuarto\": \"Basic Room\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/quarto/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"T4",
+										"BackEnd",
+										"HotelSlim",
+										"public",
+										"index.php",
+										"v1",
+										"quarto",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 09 Nov 2018 02:28:34 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.35 (Win32) OpenSSL/1.1.0i PHP/7.2.11"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.11"
+								},
+								{
+									"key": "Content-Length",
+									"value": "24"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "Atualizado com sucesso\r\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "RESERVA",
+			"item": [
+				{
+					"name": "Efetuar reserva",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"idQuartoReserva\": \"1\",\n    \"dataDia\": \"10\",\n    \"dataMes\": \"03\",\n    \"dataAno\": \"2018\",\n    \"qntDias\": \"2\",\n    \"cpf\": \"200.200.200-01\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/reserva",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"T4",
+								"BackEnd",
+								"HotelSlim",
+								"public",
+								"index.php",
+								"v1",
+								"reserva"
+							]
+						},
+						"description": "Descrição:\n\nEfetuar uma reserva."
+					},
+					"response": [
+						{
+							"name": "Efetuar reserva",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost/hotelSlim/backEnd/public/index.php/v1/reserva",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hotelSlim",
+										"backEnd",
+										"public",
+										"index.php",
+										"v1",
+										"reserva"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 09 Nov 2018 21:56:47 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.35 (Win32) OpenSSL/1.1.0i PHP/7.2.11"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.11"
+								},
+								{
+									"key": "Content-Length",
+									"value": "892"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "array(6) {\n  [\"idQuartoReserva\"]=>\n  string(1) \"1\"\n  [\"dataDia\"]=>\n  string(2) \"10\"\n  [\"dataMes\"]=>\n  string(2) \"03\"\n  [\"dataAno\"]=>\n  string(4) \"2018\"\n  [\"qntDias\"]=>\n  string(1) \"2\"\n  [\"cpf\"]=>\n  string(14) \"200.200.200-01\"\n}\n\n"
+						}
+					]
+				},
+				{
+					"name": "All reserva",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/reserva",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"T4",
+								"BackEnd",
+								"HotelSlim",
+								"public",
+								"index.php",
+								"v1",
+								"reserva"
+							]
+						},
+						"description": "Descrição:\n\nAcessar todas as reservas."
+					},
+					"response": [
+						{
+							"name": "GET all reserva",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost/hotelSlim/backEnd/public/index.php/v1/reserva",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hotelSlim",
+										"backEnd",
+										"public",
+										"index.php",
+										"v1",
+										"reserva"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 09 Nov 2018 22:05:57 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.35 (Win32) OpenSSL/1.1.0i PHP/7.2.11"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.11"
+								},
+								{
+									"key": "Content-Length",
+									"value": "299"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"reserva\": [\n        {\n            \"idReserva\": \"1\",\n            \"idQuartoReserva\": \"1\",\n            \"idClienteReserva\": \"1\",\n            \"precoTotal\": \"1000\",\n            \"dataDia\": \"10\",\n            \"dataMes\": \"2\",\n            \"dataAno\": \"2018\",\n            \"qntDias\": \"2\"\n        },\n        {\n            \"idReserva\": \"2\",\n            \"idQuartoReserva\": \"2\",\n            \"idClienteReserva\": \"1\",\n            \"precoTotal\": \"200\",\n            \"dataDia\": \"3\",\n            \"dataMes\": \"4\",\n            \"dataAno\": \"2018\",\n            \"qntDias\": \"2\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "One reserva By Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/reserva/{idReserva}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"T4",
+								"BackEnd",
+								"HotelSlim",
+								"public",
+								"index.php",
+								"v1",
+								"reserva",
+								"{idReserva}"
+							]
+						},
+						"description": "Descrição:\n\nAcessar uma reserva pelo Id."
+					},
+					"response": [
+						{
+							"name": ".",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/reserva/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"T4",
+										"BackEnd",
+										"HotelSlim",
+										"public",
+										"index.php",
+										"v1",
+										"reserva",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 09 Nov 2018 22:08:06 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.35 (Win32) OpenSSL/1.1.0i PHP/7.2.11"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.11"
+								},
+								{
+									"key": "Content-Length",
+									"value": "144"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"idReserva\": \"1\",\n    \"idQuartoReserva\": \"1\",\n    \"idClienteReserva\": \"1\",\n    \"precoTotal\": \"1000\",\n    \"dataDia\": \"10\",\n    \"dataMes\": \"2\",\n    \"dataAno\": \"2018\",\n    \"qntDias\": \"2\"\n}"
+						}
+					]
+				},
+				{
+					"name": "reserva By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/reserva/{idReserva}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"T4",
+								"BackEnd",
+								"HotelSlim",
+								"public",
+								"index.php",
+								"v1",
+								"reserva",
+								"{idReserva}"
+							]
+						},
+						"description": "Descrição:\n\nDeletar uma reserva pelo Id."
+					},
+					"response": [
+						{
+							"name": "Deletar uma reserva pelo id",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/reserva/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"T4",
+										"BackEnd",
+										"HotelSlim",
+										"public",
+										"index.php",
+										"v1",
+										"reserva",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 09 Nov 2018 22:18:14 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.35 (Win32) OpenSSL/1.1.0i PHP/7.2.11"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.11"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "Deletado com sucesso\r\n"
+						}
+					]
+				},
+				{
+					"name": "Alterar dados reserva",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"idQuartoReserva\": \"1\",\n    \"dataDia\": \"12\",\n    \"dataMes\": \"04\",\n    \"dataAno\": \"2018\",\n    \"qntDias\": \"20\",\n    \"cpf\": \"555.555.555-30\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/reserva/{idReserva}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"T4",
+								"BackEnd",
+								"HotelSlim",
+								"public",
+								"index.php",
+								"v1",
+								"reserva",
+								"{idReserva}"
+							]
+						},
+						"description": "Descrição:\n\nAlterar um dado na reserva."
+					},
+					"response": [
+						{
+							"name": "Alterar dados reserva",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"idQuartoReserva\": \"1\",\n    \"dataDia\": \"12\",\n    \"dataMes\": \"04\",\n    \"dataAno\": \"2018\",\n    \"qntDias\": \"20\",\n    \"cpf\": \"555.555.555-30\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost/T4/BackEnd/HotelSlim/public/index.php/v1/reserva/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"T4",
+										"BackEnd",
+										"HotelSlim",
+										"public",
+										"index.php",
+										"v1",
+										"reserva",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 09 Nov 2018 22:31:42 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.35 (Win32) OpenSSL/1.1.0i PHP/7.2.11"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.11"
+								},
+								{
+									"key": "Content-Length",
+									"value": "328"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "Atualizado com sucesso\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}
