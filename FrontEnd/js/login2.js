@@ -1,4 +1,3 @@
-
 //https://www.formget.com/javascript-login-form/
 
 var attempt = 3; // Variable to count number of attempts.
@@ -13,9 +12,9 @@ function validate() {
 
     $.ajax({
 
-
-        url: "IP://docker/APILogin/HotelSlim/public/v1/funcionario:PORTA", // my php file
+        url: "/docker/APILogin/HotelSlim/public/v1/funcionario", // my php file
         type: 'GET', // type of the HTTP request
+        //MEXER NESSA MERDA
         success: function (funcionariosArray) {
             var obj = jQuery.parseJSON(result);
             console.log(obj);

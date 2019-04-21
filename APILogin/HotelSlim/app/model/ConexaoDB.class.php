@@ -18,7 +18,7 @@ class ConexaoDB {
 
         $this->nomeServer = "localhost";
 		$this->usuario = "root";
-		$this->senha = "";
+		$this->senha = "senha666";
         $this->dataBase = "hotel";
         $this->charset = 'utf8mb4';
         $dsn = "mysql:host=$this->nomeServer;dbname=$this->dataBase;charset=$this->charset";
