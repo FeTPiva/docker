@@ -3,8 +3,8 @@
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 use \app\controller\ControladorApp;
-use \app\classes\Cliente;
-use \app\model\ClienteDAOImplementation as ClienteDAO;
+use \app\classes\Quarto;
+use \app\model\QuartoDAOImplementation as QuartoDAO;
 
 require_once 'config.php';
 
