@@ -2,36 +2,33 @@
 // Variable to count number of attempts.
 // Below function Executes on click of login button.
 
-
 function validate() {
     //isso ja sai como string https://www.w3schools.com/jsref/prop_text_value.asp
     var username = document.getElementById("email").value;
     var password = document.getElementById("senha").value;
-    var data = {};
+    //var data = {};
     //$.getJson('/docker/APILogin/HotelSlim/public/v1/funcionario', function(jsonData){});
     //console.log(jsonData);
-    
-    $.ajax({
-               
-        url: '../Login/public/index.php/v1/funcionario', // my php file
-        type: 'GET', // type of the HTTP request
-        data: data,    
-        success: function (resultdata, textStatus, xhr) {
-            var obj = jQuery.getJSON(resultdata);
-      
-            console.log(username + " " + password);
-            console.log(obj);
-            
-            
-            if (username == obj["login"] && password == obj["senha"]) {
+    $.getJSON('../APILogin/public/index.php/v1/funcionario', function (data) {
+        console.log(data);
+       
+        var data2 = JSON.stringify(data);
+        console.log(data2);
 
-                alert("Login successfully");
-                window.location = "exibe.html"; // Redirecting to other page.
-                return false;
-
-            }
-           
+        if ((data2.indexOf(username) > -1) && (data2.indexOf(password) > -1) &&  username != '' && password !='') {
+            //In the array!
+            
+            window.location = "exibe.html";
+            alert("Login funcionou :O");
+        } else {
+            //Not in the array
+            alert("Login Fail :( olhe a SUPER dica");
         }
-    });
 
+        //for(i=0; i<data2.length; i++){
+           // console.log(data2[i]);
+       // }
+          
+      });
+     
 }
