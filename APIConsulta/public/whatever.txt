@@ -1,0 +1,14 @@
+RewriteCond %{REQUEST_FILENAME} !^/?(api.)
+RewriteCond %{REQUEST_FILENAME} !^/?(public.)
+RewriteRule ^/?(.*)$ /public/$1 [PT]
+
+
+RewriteEngine On
+RewriteRule ^/api/([^\.]+).(xml|json|atom) api.php?url=$1&type=$2
+
+
+
+https://stackoverflow.com/questions/8291712/using-clean-urls-in-restful-api
+https://developer.ibm.com/answers/questions/14354/htaccess-php-and-rest-api-configurations/
+
+https://www.nginx.com/resources/wiki/start/topics/examples/server_blocks/
